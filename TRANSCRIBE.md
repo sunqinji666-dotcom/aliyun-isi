@@ -17,26 +17,26 @@ This folder now supports two transcription modes:
 ## Install
 
 ```bash
-cd "/Users/jacksun/Documents/知识库/aliyun-isi"
+cd "."
 python3 -m pip install -r requirements.txt
 ```
 
 ## Fast Local File To Text
 
 ```bash
-python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/transcribe_audio.py" "/absolute/path/to/your-audio.wav"
+python3 "./scripts/transcribe_audio.py" "/absolute/path/to/your-audio.wav"
 ```
 
 Save plain text:
 
 ```bash
-python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/transcribe_audio.py" "/absolute/path/to/your-audio.wav" --txt-out "/absolute/path/to/result.txt"
+python3 "./scripts/transcribe_audio.py" "/absolute/path/to/your-audio.wav" --txt-out "/absolute/path/to/result.txt"
 ```
 
 Save raw JSON too:
 
 ```bash
-python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/transcribe_audio.py" "/absolute/path/to/your-audio.wav" --txt-out "/absolute/path/to/result.txt" --json-out "/absolute/path/to/result.json"
+python3 "./scripts/transcribe_audio.py" "/absolute/path/to/your-audio.wav" --txt-out "/absolute/path/to/result.txt" --json-out "/absolute/path/to/result.json"
 ```
 
 ## Remote URL To Text
@@ -44,7 +44,7 @@ python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/transcribe_audio.
 Use this when the file already lives on OSS or another public HTTPS URL:
 
 ```bash
-python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/transcribe_recording_url.py" "https://your-bucket.oss-cn-shanghai.aliyuncs.com/demo.wav" --txt-out "/absolute/path/to/result.txt"
+python3 "./scripts/transcribe_recording_url.py" "https://your-bucket.oss-cn-shanghai.aliyuncs.com/demo.wav" --txt-out "/absolute/path/to/result.txt"
 ```
 
 ## Batch A Folder
@@ -52,7 +52,7 @@ python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/transcribe_record
 If you have a whole folder of lesson audio, interviews, or course recordings:
 
 ```bash
-python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/batch_transcribe_folder.py" "/Users/jacksun/Desktop/Seedance2.0教学_音频"
+python3 "./scripts/batch_transcribe_folder.py" "/path/to/audio-folder"
 ```
 
 This creates a `转写结果` folder beside the audio files and saves one `.txt` per source file.
@@ -64,7 +64,7 @@ By default, batch mode now skips files that already have output results in the t
 If you want the cheapest local-folder path and already configured OSS + Bailian:
 
 ```bash
-python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/batch_transcribe_paraformer_folder.py" "/Users/jacksun/Desktop/Seedance2.0教学_音频"
+python3 "./scripts/batch_transcribe_paraformer_folder.py" "/path/to/audio-folder"
 ```
 
 This creates a `转写结果-百炼` folder beside the audio files and uploads each file to OSS automatically before running Paraformer.
@@ -77,8 +77,8 @@ By default, this batch mode also skips files that already have output results. U
 
 Every transcription job now appends history to:
 
-- `/Users/jacksun/Documents/知识库/aliyun-isi/logs/usage_history.csv`
-- `/Users/jacksun/Documents/知识库/aliyun-isi/logs/usage_history.jsonl`
+- `./logs/usage_history.csv`
+- `./logs/usage_history.jsonl`
 
 Logged fields include:
 
@@ -103,7 +103,7 @@ This helps clean up terms such as `Seedance 2.0`, `Sora`, `豆包`, `RunningHub`
 If you want the current AI to polish a raw transcript into a final manuscript for your creator/editor/director workflow:
 
 ```bash
-python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/prepare_transcript_calibration.py" "/absolute/path/to/raw.txt"
+python3 "./scripts/prepare_transcript_calibration.py" "/absolute/path/to/raw.txt"
 ```
 
 This generates:

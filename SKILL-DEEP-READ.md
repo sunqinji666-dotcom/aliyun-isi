@@ -4,12 +4,12 @@
 
 ## 用途
 
-对 `/Users/jacksun/Documents/知识库/新增转录/` 下的所有转录文稿进行**精读提炼**，而不是简单摘要。输出可直接执行的方法论。
+对 `/path/to/transcripts/` 下的所有转录文稿进行**精读提炼**，而不是简单摘要。输出可直接执行的方法论。
 
 ## 知识库路径
 
 ```
-/Users/jacksun/Documents/知识库/新增转录/
+/path/to/transcripts/
 ├── 爱戏剧的柏拉图-视频转录/
 │   ├── 音频文件/          # 319 个音频
 │   └── 转录结果/          # 318 个 txt 文稿
@@ -163,7 +163,7 @@ AI 执行：
 
 ```bash
 # 1. 检索相关文稿
-grep -rl "关键词" /Users/jacksun/Documents/知识库/新增转录/*/转录结果/
+grep -rl "关键词" /path/to/transcripts/*/转录结果/
 
 # 2. 逐篇精读
 cat "/path/to/file.txt" | head -50  # 先看开头判断主题相关性

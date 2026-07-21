@@ -14,7 +14,7 @@ This folder now supports two synthesis modes:
 ## Install
 
 ```bash
-cd "/Users/jacksun/Documents/知识库/aliyun-isi"
+cd "."
 python3 -m pip install -r requirements.txt
 ```
 
@@ -23,13 +23,13 @@ python3 -m pip install -r requirements.txt
 Output a short line as wav:
 
 ```bash
-python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/synthesize_short_text.py" "这是一个临时旁白样音。" --out "/Users/jacksun/Documents/preview.wav"
+python3 "./scripts/synthesize_short_text.py" "这是一个临时旁白样音。" --out "/path/to/output.wav"
 ```
 
 Common knobs:
 
 ```bash
-python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/synthesize_short_text.py" "请看下一条镜头转场。" --out "/Users/jacksun/Documents/preview.mp3" --format mp3 --voice xiaoyun --speech-rate 50 --pitch-rate 20
+python3 "./scripts/synthesize_short_text.py" "请看下一条镜头转场。" --out "/path/to/output.mp3" --format mp3 --voice xiaoyun --speech-rate 50 --pitch-rate 20
 ```
 
 ## Long TTS
@@ -37,7 +37,7 @@ python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/synthesize_short_
 Generate long-form speech and download the final file:
 
 ```bash
-python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/synthesize_long_text.py" "这里放你的长文案内容" --download-to "/Users/jacksun/Documents/long-voice.wav" --json-out "/Users/jacksun/Documents/long-voice.json"
+python3 "./scripts/synthesize_long_text.py" "这里放你的长文案内容" --download-to "/Users/jacksun/Documents/long-voice.wav" --json-out "/Users/jacksun/Documents/long-voice.json"
 ```
 
 ## Best Use For Editors And Directors

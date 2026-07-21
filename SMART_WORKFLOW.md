@@ -46,37 +46,37 @@ After transcription, ask:
 Humans or AI tools can start with:
 
 ```bash
-python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/transcribe_smart.py"
+python3 "./scripts/transcribe_smart.py"
 ```
 
 Or print a recommendation without running:
 
 ```bash
-python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/transcribe_smart.py" --mode recommend --source local --priority fastest --audio "/absolute/path/demo.mp3"
+python3 "./scripts/transcribe_smart.py" --mode recommend --source local --priority fastest --audio "/absolute/path/demo.mp3"
 ```
 
 Or run directly:
 
 ```bash
-python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/transcribe_smart.py" --mode run --source local --priority fastest --audio "/absolute/path/demo.mp3" --txt-out "/absolute/path/demo.txt"
+python3 "./scripts/transcribe_smart.py" --mode run --source local --priority fastest --audio "/absolute/path/demo.mp3" --txt-out "/absolute/path/demo.txt"
 ```
 
 Cheapest local path with automatic OSS upload:
 
 ```bash
-python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/transcribe_smart.py" --mode run --source local --priority cheapest --audio "/absolute/path/demo.mp3" --txt-out "/absolute/path/demo.txt"
+python3 "./scripts/transcribe_smart.py" --mode run --source local --priority cheapest --audio "/absolute/path/demo.mp3" --txt-out "/absolute/path/demo.txt"
 ```
 
 Cheapest batch folder path with automatic OSS upload:
 
 ```bash
-python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/transcribe_smart.py" --mode run --folder "/absolute/path/audio-folder"
+python3 "./scripts/transcribe_smart.py" --mode run --folder "/absolute/path/audio-folder"
 ```
 
 Keep uploaded OSS files instead of auto-cleaning:
 
 ```bash
-python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/transcribe_paraformer_local.py" "/absolute/path/demo.mp3" --txt-out "/absolute/path/demo.txt" --keep-oss
+python3 "./scripts/transcribe_paraformer_local.py" "/absolute/path/demo.mp3" --txt-out "/absolute/path/demo.txt" --keep-oss
 ```
 
 ## Local Secrets
@@ -97,7 +97,7 @@ AI tools should load them locally and must not print them back into chat.
 If the user wants transcript calibration, use:
 
 ```bash
-python3 "/Users/jacksun/Documents/知识库/aliyun-isi/scripts/prepare_transcript_calibration.py" "/absolute/path/raw-transcript.txt"
+python3 "./scripts/prepare_transcript_calibration.py" "/absolute/path/raw-transcript.txt"
 ```
 
 Then the current AI should read the generated `.calibration-prompt.md` and produce the final manuscript.

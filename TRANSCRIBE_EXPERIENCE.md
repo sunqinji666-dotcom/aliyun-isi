@@ -120,7 +120,7 @@
 
 ```bash
 # 1. 一次性批量转录（有跳过逻辑，不会重复）
-cd /Users/jacksun/Documents/知识库/aliyun-isi
+cd .
 source .venv/bin/activate
 python3 scripts/batch_transcribe_paraformer_folder.py \
     <音频目录> \

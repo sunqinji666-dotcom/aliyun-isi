@@ -9,7 +9,7 @@ import sys
 import glob
 
 # 知识库路径
-BASE_DIR = "/Users/jacksun/Documents/知识库/新增转录"
+BASE_DIR = "/path/to/transcripts"
 
 TRANSCRIPT_DIRS = [
     os.path.join(BASE_DIR, "爱戏剧的柏拉图-视频转录/转录结果"),
