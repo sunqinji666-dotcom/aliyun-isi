@@ -37,7 +37,7 @@ python3 "./scripts/synthesize_short_text.py" "请看下一条镜头转场。" --
 Generate long-form speech and download the final file:
 
 ```bash
-python3 "./scripts/synthesize_long_text.py" "这里放你的长文案内容" --download-to "/Users/jacksun/Documents/long-voice.wav" --json-out "/Users/jacksun/Documents/long-voice.json"
+python3 "./scripts/synthesize_long_text.py" "这里放你的长文案内容" --download-to "/path/to/output.wav" --json-out "/path/to/output.json"
 ```
 
 ## Best Use For Editors And Directors
