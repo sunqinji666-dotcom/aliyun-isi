@@ -2,7 +2,7 @@
 
 Transcription, text-to-speech, and transcript calibration workflows for Aliyun Intelligent Speech Interaction.
 
-![Project visual](docs/assets/hero-system-v1.png)
+![aliyun-isi project visual](assets/aliyun-isi-hero.png)
 
 Language: हिन्दी. See the [English guide](README.en.md) or [中文首页](../README.md) for setup, privacy, and contribution details.
 

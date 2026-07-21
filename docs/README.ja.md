@@ -2,7 +2,7 @@
 
 Transcription, text-to-speech, and transcript calibration workflows for Aliyun Intelligent Speech Interaction.
 
-![プロジェクトのビジュアル](docs/assets/hero-system-v1.png)
+![aliyun-isi project visual](assets/aliyun-isi-hero.png)
 
 ## できること
 

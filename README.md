@@ -1,6 +1,6 @@
 # Aliyun ISI Workflows
 
-![Project visual](docs/assets/hero-system-v1.png)
+![aliyun-isi project visual](docs/assets/aliyun-isi-hero.png)
 
 Aliyun Intelligent Speech Interaction workflows for transcription, text-to-speech, and transcript calibration.
 
