@@ -1,0 +1,7 @@
+interface:
+  display_name: "阿里云语音工具（Aliyun ISI）"
+  short_description: "剪辑与导演可直接用的阿里云语音转写与配音技能包"
+  default_prompt: "Use $aliyun-isi to ask a few short questions, choose the best speech workflow, and run transcription or TTS with local credentials."
+
+policy:
+  allow_implicit_invocation: true

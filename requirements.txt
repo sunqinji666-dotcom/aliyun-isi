@@ -1,0 +1,4 @@
+aliyun-python-sdk-core==2.15.1
+requests>=2.31.0
+oss2>=2.19.1
+https://github.com/aliyun/alibabacloud-nls-python-sdk/archive/refs/tags/v1.0.2.zip
